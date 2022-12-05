@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    
+    <form id="tempCalc" onsubmit="calculateTemp();return false">
+     <!-- here we are seeing new function i.e. onSubmit -->
+    <!-- we are using return statement in this; nh toh form submit ho jaa rha tha
+    usse bachne ke liye likha hai return false -->
+
+    <label for="temp">👻Please Enter The Temperature You'd Like To Convert👻</label>
+    <br/>
+    <input type="number" name="temp" id="temp">
+    
+    <select name="temp_diff" id="temp_diff">
+        <option value="cel">°Celsius</option>
+        <option value="fah">°Fahrenheit</option>
+    </select> <br/>
+
+    <input type="submit" name="temp"> <br/>
+    <span id="resultContainer"></span>
+
+    </form>
+    
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>

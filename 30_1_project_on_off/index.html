@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-heading">
+        <h1>Can You Turn The Lights</h1>
+
+        <button onclick="document.getElementById('myImage').src='imageson.jpg'">Turn On the Light</button>
+        <!-- in this line directly onclick we are changing the image, this is dynamic JavaScript -->
+        <!-- with the help of JavaScript the image source attribute changing so easily -->
+        <img src="imagesoff.jpg" alt="Light Off Pic" id="myImage">
+
+        <button onclick="document.getElementById('myImage').src='imagesoff.jpg'">Turn Off the Light</button>
+    </div>
+</body>
+</html>
